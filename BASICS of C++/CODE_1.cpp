@@ -1,10 +1,11 @@
 #include<iostream>
 
+using namespace std;
 
 int main()
 {
   
-    std:: cout << "Hello World!"<<std:: endl; // endl and \n takes us to the next line
+    cout << "Hello World!" << endl; // endl and \n takes us to the next line
 
 
     return 0;
