@@ -7,7 +7,7 @@ int main()
   
     int array[5];
 
-    cout << " enter the 5 elements of array";
+    cout << " Enter the 5 elements of array";
 
     for(int i=0 ; i<5 ; i++)
     {
