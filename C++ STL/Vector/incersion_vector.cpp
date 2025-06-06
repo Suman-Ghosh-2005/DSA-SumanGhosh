@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void ExplainPair()
+void Explainvector()
 {
     vector<int> v= {1, 2, 3, 4, 5};
     vector<int> v1= {10, 20, 30, 48, 57};
@@ -28,6 +28,6 @@ void ExplainPair()
 
 int main()
 {
-    ExplainPair();
+    Explainvector();
     return 0;
 }
