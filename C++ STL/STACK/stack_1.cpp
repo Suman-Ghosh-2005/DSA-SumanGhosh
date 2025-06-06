@@ -14,10 +14,13 @@ void Explain_stack()
 
     cout << st.size() << endl; // Getting the size of the stack which is 2
     cout << st.empty() << endl; // Checking if the stack is empty, returns 0 (false) since it has elements
+
+    stack<int>st1,st2;
+    st1.swap(st2); // Swapping the contents of two stacks
 }
 
 int main()
 {
-
+Explain_stack();
     return 0;
 }
