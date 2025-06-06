@@ -48,9 +48,9 @@ void UseBeginEnd()
     cout << *(it) << endl;
 
     vector<int> :: iterator it = v.end(); // remember  that this end() will always be a memory location right after the last element.
-    vector<int> :: iterator it = v.rbegin();//
+    // vector<int> :: iterator it = v.rbegin();//
 
-    vector<int> :: iterator it = v.rend(); // this rend() will always be a memory location right before the first element.
+    // vector<int> :: iterator it = v.rend(); // this rend() will always be a memory location right before the first element.
    
     cout<<v.at(0)<<endl; // Accessing the first element using at()
 
