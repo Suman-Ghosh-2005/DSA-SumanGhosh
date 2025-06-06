@@ -17,7 +17,8 @@ void  print_name(int n){
 
 int main()
 {
-   int n=5;
+   int n;
+   cin>> n; // Input the number of times to print the name
     print_name(n); // Call the function to print the name n times
     return 0;
 }
