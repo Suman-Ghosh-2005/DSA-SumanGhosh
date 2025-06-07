@@ -13,7 +13,7 @@ int main() {
     int n;
     cout << "Enter index: ";
     cin >> n;
-    int f = printFibo(n-1); // cause index starts from 0
+    int f = printFibo(n); // nth position
     cout << f <<endl; 
     return 0;
 }
