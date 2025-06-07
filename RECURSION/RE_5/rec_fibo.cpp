@@ -7,6 +7,7 @@ void printFibo(int a, int b, int idx, int n) {
     printFibo(b, a + b, idx + 1, n);
 }
 
+
 int main() {
     int n;
     cout << "Enter index: ";
