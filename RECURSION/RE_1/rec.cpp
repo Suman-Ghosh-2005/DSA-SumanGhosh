@@ -5,12 +5,12 @@ using namespace std;
 int cnt = 0;
 
 void print(){
- if(cnt ==1){
+ if(cnt ==5){
     return;
  }
  else{
 
-    cout << "hi" << endl;
+    cout << cnt << endl;
 
     cnt++;
     print(); // Recursive call
