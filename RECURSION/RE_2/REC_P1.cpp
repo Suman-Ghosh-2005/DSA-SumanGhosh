@@ -26,7 +26,7 @@ void print_descending(int n){
 
 int main()
 {
-   int n=4;
+   int n=10;
 //    cout << "Enter the number of times to print the name: ";
 //    cin>> n; // Input the number of times to print the name
     // print_n(1,n); // Call the function to print the name n times
