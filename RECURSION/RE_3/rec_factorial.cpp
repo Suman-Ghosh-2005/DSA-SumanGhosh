@@ -12,7 +12,7 @@ else{
 
 int main()
 {
-   int n=4;
+   int n=6;
     int factorial = print_Factorial(n); // Call the function to calculate the factorial of n
     cout << "Factorial of " << n << " is: " << factorial << endl; // Output the result
 
