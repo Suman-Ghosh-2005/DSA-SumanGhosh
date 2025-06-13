@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+// brute force approach to left rotate an array by k places
 void Left_Rotate(vector<int> &arr, int n ,int k)
 {   k=k%n;
     if(k==0) return;
@@ -23,6 +25,17 @@ void Left_Rotate(vector<int> &arr, int n ,int k)
     }
    
 }
+//now the optimal approach to left rotate an array by k places
+void Left_Rotate_Optimal(vector<int> &arr, int n ,int k)
+{   
+    k=k%n;
+    if(k==0) return;
+
+    reverse(arr.begin(), arr.begin() + k); // Reverse the first k elements
+    reverse(arr.begin() + k, arr.end()); // Reverse the remaining elements
+    reverse(arr.begin(), arr.end()); // Reverse the entire array
+}
+//
 
 int main()
 {   
