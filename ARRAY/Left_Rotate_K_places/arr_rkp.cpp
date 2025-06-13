@@ -35,7 +35,6 @@ void Left_Rotate_Optimal(vector<int> &arr, int n ,int k)
     reverse(arr.begin() + k, arr.end()); // Reverse the remaining elements
     reverse(arr.begin(), arr.end()); // Reverse the entire array
 }
-//
 
 int main()
 {   
