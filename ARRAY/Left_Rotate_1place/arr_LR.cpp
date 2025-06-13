@@ -16,7 +16,7 @@ void Left_Rotate(vector<int> &arr, int n)
 
 int main()
 {   
-    int n;
+    int  n;
     cin >> n;
 
     vector<int> arr(n);
