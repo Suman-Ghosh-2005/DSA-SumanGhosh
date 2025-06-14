@@ -2,8 +2,7 @@
 using namespace std;
 
 int printFibo(int n) {
-   if(n==0) return 0;
-   if(n==1) return 1;
+  if(n <= 1) return n;
    
    return printFibo(n-2)+printFibo(n-1);
 }
