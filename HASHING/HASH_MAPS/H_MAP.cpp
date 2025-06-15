@@ -29,7 +29,7 @@ void Hashing_MAP(int arr[], int n)
     }
 }
 
-int main()
+int main() 
 {
     int n;
     cout << "enter the size of the array" << endl;
