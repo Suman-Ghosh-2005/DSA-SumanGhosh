@@ -19,13 +19,9 @@ void INSERTION_SORT(int arr[], int n)
             swap(arr[j], arr[j - 1]); // Swap the elements if they are in the wrong order
             // This effectively shifts the larger element to the right 
 
-           
-
             j--; // Move to the previous element
         }
        
-
-     
     }
 }
 
