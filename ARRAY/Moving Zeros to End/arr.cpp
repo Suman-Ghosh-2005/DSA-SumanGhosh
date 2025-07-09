@@ -4,7 +4,7 @@ using namespace std;
 void move_Z_End(vector<int> &arr, int n)
 {
    int j =-1;
-   for(i=0 ; i<n; i++)
+   for(int i=0 ; i<n; i++)
    {
     if(arr[i]==0)
     {
@@ -12,6 +12,8 @@ void move_Z_End(vector<int> &arr, int n)
         break; // Found the first zero, no need to continue
     }
    }
+   
+   if (j == -1) return; // If no zero found, return
 
    for (int i = j + 1; i < n; i++)
    {
