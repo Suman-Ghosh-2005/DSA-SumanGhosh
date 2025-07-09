@@ -1,21 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void move_Z_End(vector<int> &arr, int n, int k)
+void move_Z_End(vector<int> &arr, int n)
 {
-    int j = 0; // Pointer for the next non-zero element
-    for (int i = 0; i < n; i++)
+   int j =-1;
+   for(i=0 ; i<n; i++)
+   {
+    if(arr[i]==0)
     {
-        if (arr[i] != k) // If the current element is not zero
-        {
-            arr[j++] = arr[i]; // Place it at the next position
-        }
+        j=i;
+        break; // Found the first zero, no need to continue
     }
-    // Fill the remaining positions with zeros
-    while (j < n)
-    {
-        arr[j++] = k;
-    }
+   }
+
+   for (int i = j + 1; i < n; i++)
+   {
+       if (arr[i] != 0)
+       {
+           swap(arr[i], arr[j]);
+           j++;
+       }
+   }
 }
 
 int main()
@@ -33,7 +38,7 @@ int main()
         cin >> arr[i];
     }
   
-    move_Z_End(arr, n,k);
+    move_Z_End(arr, n); // Assuming we want to move zeros to the end
     cout << "After the array is :" << endl;      
     for (int i = 0; i < n; i++)
     {
