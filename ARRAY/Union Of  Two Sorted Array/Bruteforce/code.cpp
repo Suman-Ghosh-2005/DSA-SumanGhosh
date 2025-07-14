@@ -24,6 +24,13 @@ int main()
     {
         unionArr.push_back(it);
     }
+    cout << "Union of two sorted arrays is: ";
+    for (int i = 0; i < unionArr.size(); i++)
+    {
+        cout << unionArr[i] << " ";
+    }       
+    cout << endl;
+    
 
     return 0;
 }
