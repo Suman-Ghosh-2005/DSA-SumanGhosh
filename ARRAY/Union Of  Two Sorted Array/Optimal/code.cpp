@@ -11,33 +11,48 @@ int main()
     n2 = arr2.size();   
     
     int i = 0, j = 0;
-    while (i < n1 && j < n2) {
+
+    while (i < n1 && j < n2) 
+    {
+        // Compare elements of both arrays
         if (arr1[i] < arr2[j]) {
             unionArr.push_back(arr1[i]);
             i++;
-        } else if (arr1[i] > arr2[j]) {
+        } 
+        else if (arr1[i] > arr2[j]) {
             unionArr.push_back(arr2[j]);
             j++;
-        } else {
+        }
+         else {
             unionArr.push_back(arr1[i]);
             i++;
             j++;
         }
+
+        
     }   
-    while (i < n1) {
+
+    while (i < n1)
+     {
         unionArr.push_back(arr1[i]);
         i++;
     }   
-    while (j < n2) {
+    while (j < n2) 
+    {
+
+
         unionArr.push_back(arr2[j]);
         j++;
     }
+
+
     cout << "Union of two sorted arrays is: ";
+
     for (int k = 0; k < unionArr.size(); k++) {
         cout << unionArr[k] << " ";
     }
     cout << endl;
-    
+
 
     return 0;
 }
