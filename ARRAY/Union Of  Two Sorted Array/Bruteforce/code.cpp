@@ -15,6 +15,15 @@ int main()
     {
         st.insert(arr1[i]);
     }
+    for (int i = 0; i < n2; i++)
+    {
+        st.insert(arr2[i]);
+    }
+
+    for ( auto it : st)
+    {
+        unionArr.push_back(it);
+    }
 
     return 0;
 }
