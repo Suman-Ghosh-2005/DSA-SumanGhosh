@@ -1,22 +1,27 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include<bits/stdc++.h>
+using namespace std;    
 
-int missingNumber(vector<int> &a, int N)
-{
-    int xor1 = 0, xor2 = 0;
-    for (int i = 1; i <= N; i++)
-        xor1 ^= i;
-    for (int i = 0; i < a.size(); i++)
-        xor2 ^= a[i];
-
-    return xor1 ^ xor2;
-}
 
 int main()
 {
-    vector<int> arr = {1, 2, 4, 5}; 
-    int N = 5;
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
 
-    cout << "Missing number is: " << missingNumber(arr, N) << endl;
-    return 0;
-}
+    int arr[] = {1, 2, 3, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    
+    int hash[size+1]={0};
+    for(int i=0; i<size; i++)
+    {
+        hash[arr[i]] = 1; // Mark the number as present
+    }
+    for(int i=1; i<=n; i++)
+    {
+        if(hash[i] == 0) // If the number is not present
+        {
+            cout << "The missing number is: " << i << endl;
+            break;
+        }
+    }
+    return  0;}
